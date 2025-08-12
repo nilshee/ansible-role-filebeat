@@ -55,6 +55,14 @@ jobs:
             scenario: deb822
           - distro: debian12
             scenario: deb822
+          - distro: ubuntu2204
+            scenario: deb822
+          - distro: debian11
+            scenario: deb822
+          - distro: ubuntu2004
+            scenario: deb822
+          - distro: debian13
+            scenario: deb822
 
     steps:
       - name: Check out the codebase.
