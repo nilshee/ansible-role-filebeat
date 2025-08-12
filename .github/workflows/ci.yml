@@ -47,8 +47,8 @@ jobs:
             scenario: default
           - distro: ubuntu2204
             scenario: default
-          # - distro: debian12
-          #   scenario: default  # Commented out: idempotency conflicts with elasticsearch role due to DEB822 cleanup
+          - distro: debian12
+            scenario: default
           - distro: debian11
             scenario: default
           - distro: ubuntu2404

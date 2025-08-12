@@ -11,15 +11,7 @@
       apt: update_cache=yes cache_valid_time=600
       when: ansible_os_family == 'Debian'
 
-    - name: Set the java_packages variable (Debian/Ubuntu).
-      set_fact:
-        java_packages:
-          - openjdk-17-jdk
-      when: ansible_os_family == 'Debian'
-
   roles:
-    - role: geerlingguy.java
-      when: ansible_os_family == 'Debian'
     - role: geerlingguy.filebeat
 
   post_tasks:
